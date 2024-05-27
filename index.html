@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Work+Sans:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Oneflow</title>
+  </head>
+  <body>
+    <header
+      class="max-w-[1440px] m-auto h-20 flex items-center justify-between px-[15px] sticky z-1 top-0 bg-light"
+    >
+      <a href="#">
+        <img src="images/Logo.svg" alt="Logo" />
+      </a>
+      <button
+        id="burger-menu"
+        onclick="mobileOverlay.showModal()"
+        class="h-8 w-10 flex flex-col justify-between md-custom-mobile:hidden relative z-1"
+      >
+        <span class="block h-[2px] w-[100%] bg-[#000]"></span>
+        <span class="block h-[2px] w-[100%] bg-[#000]"></span>
+        <span class="block h-[2px] w-[100%] bg-[#000]"></span>
+      </button>
+      <nav class="flex gap-12 sm:gap-8 md-custom:hidden">
+        <ul class="flex gap-8">
+          <li class="header-nav-link_wrapper">
+            <a href="#" class="header-nav-link">Why Oneflow?</a>
+          </li>
+        </ul>
+        <ul class="flex gap-8 sm:gap-4">
+          <li class="header-nav-link_wrapper">
+            <a href="#" class="header-nav-link">Learn</a>
+          </li>
+          <li class="header-nav-link_wrapper">
+            <a href="#" class="header-nav-link">Pricing</a>
+          </li>
+          <li class="header-nav-link_wrapper">
+            <a href="#" class="header-nav-link">About</a>
+          </li>
+          <li class="header-nav-link_wrapper">
+            <a href="#" class="header-nav-link">Blog</a>
+          </li>
+        </ul>
+        <div class="flex gap-2">
+          <a class="action-link-alter" href="#">Get a demo</a>
+          <a class="action-link" href="#">Log in</a>
+        </div>
+        <a href="#" class="py-[11px]"><img src="images/Search.svg" alt="" /></a>
+      </nav>
+    </header>
+    <main>
+      <section
+        class="bg-[url('images/promo.png')] max-w-[1440px] mx-auto bg-no-repeat bg-cover bg-center px-[15px]"
+      >
+        <div class="max-w-[1152px] mx-auto pt-[210px] pb-[312px]">
+          <h1
+            class="text-[76px] text-lightgray font-Work-Sans pb-[31px] md:text-[58px] md:pb-[20px] sma-x:text-[40px] sma-x:pb-[14px]"
+          >
+            Work wonders
+          </h1>
+          <p
+            class="max-w-[491px] pb-[25px] font-Roboto text-[24px] tracking-tight text-lightgray md:text-[18px] md:sma-x:text-[16px]"
+          >
+            Be more effective with smart contracts that make work faster, and
+            life easier.
+          </p>
+          <div class="flex gap-4">
+            <a href="#" class="action-link-alter">Get Oneflow free</a>
+            <a href="#" class="action-link-lightgray">Take a tour</a>
+          </div>
+        </div>
+      </section>
+      <section
+        class="bg-lightgray max-w-[1440px] mx-auto flex justify-center items-center flex-col gap-6 py-20 px-[15px] md:py-14"
+      >
+        <h2 class="font-Work-Sans text-[25px] text-light md:text-[20px]">
+          Join these companies making business flow
+        </h2>
+        <ul class="flex flex-wrap gap-8 items-center justify-center">
+          <li>
+            <a href="#"><img src="images/Sponsor1.png" alt="Sponsor" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/Sponsor2.png" alt="Sponsor" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/Sponsor3.png" alt="Sponsor" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/Sponsor4.png" alt="Sponsor" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/Sponsor5.png" alt="Sponsor" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/Sponsor6.png" alt="Sponsor" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/Sponsor7.png" alt="Sponsor" /></a>
+          </li>
+        </ul>
+      </section>
+      <section class="bg-lightgray max-w-[1440px] mx-auto pb-8 px-[15px]">
+        <div
+          class="max-w-[1152px] mx-auto flex items-start justify-between gap-5 md:flex-col md:items-center md:gap-12"
+        >
+          <div class="pr-[96px] md:pr-[0px]">
+            <h2 class="about-title">Turn signatures into smart contracts</h2>
+            <p
+              class="max-w-[528px] font-Roboto text-[21px] text-light leading-[138%] pb-5 md:text-[16px]"
+            >
+              Experience true contract magic by automating the entire contract
+              process — from creating to signing and managing.
+            </p>
+            <a href="#" class="action-link-alter">Take our product tour</a>
+          </div>
+          <div class="about-image"></div>
+        </div>
+      </section>
+      <section
+        class="bg-lightgray max-w-[1440px] mx-auto py-[128px] px-[15px] sm:py-[64px]"
+      >
+        <div class="max-w-[1152px] mx-auto bg-[#D3E8F4] rounded-[10px]">
+          <div
+            class="grid grid-cols-6 gap-[110px] pb-8 border-b-2 border-[#94B4C2] px-[96px] py-[32px] sm:px-[64px] md:grid-cols-3 md:grid-rows-2 md:gap-[40px] sma-x:px-[15px]"
+          >
+            <div class="flex flex-col gap-2 text-center items-center">
+              <div>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_1_551)">
+                    <path d="M14 17.02H10V24.02H14V17.02Z" fill="#013A4C" />
+                    <path
+                      d="M14 -0.0200195H10V6.97998H14V-0.0200195Z"
+                      fill="#013A4C"
+                    />
+                    <path
+                      d="M6.98001 10H-0.019989V14H6.98001V10Z"
+                      fill="#013A4C"
+                    />
+                    <path d="M24.02 10H17.02V14H24.02V10Z" fill="#013A4C" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_551">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <p class="font-Roboto text-[17px] leading-[141%] text-lightgray">
+                Create
+              </p>
+            </div>
+            <div class="flex flex-col gap-2 text-center items-center">
+              <div>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_1_573)">
+                    <path d="M14 17.02H10V24.02H14V17.02Z" fill="#013A4C" />
+                    <path
+                      d="M14 -0.0200195H10V6.97998H14V-0.0200195Z"
+                      fill="#013A4C"
+                    />
+                    <path
+                      d="M6.98001 10H-0.019989V14H6.98001V10Z"
+                      fill="#013A4C"
+                    />
+                    <path d="M24.02 10H17.02V14H24.02V10Z" fill="#013A4C" />
+                    <path
+                      d="M7.03123 14.1386L2.08148 19.0884L4.90991 21.9168L9.85966 16.9671L7.03123 14.1386Z"
+                      fill="#013A4C"
+                    />
+                    <path
+                      d="M19.0912 2.08321L14.1415 7.03296L16.9699 9.86139L21.9197 4.91164L19.0912 2.08321Z"
+                      fill="#013A4C"
+                    />
+                    <path
+                      d="M4.9122 2.08087L2.08377 4.9093L7.03352 9.85905L9.86195 7.03062L4.9122 2.08087Z"
+                      fill="#013A4C"
+                    />
+                    <path
+                      d="M16.9676 14.1409L14.1392 16.9694L19.0889 21.9191L21.9174 19.0907L16.9676 14.1409Z"
+                      fill="#013A4C"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_573">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <p class="font-Roboto text-[17px] leading-[141%] text-lightgray">
+                Collaborate
+              </p>
+            </div>
+            <div class="flex flex-col gap-2 text-center items-center">
+              <div>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_1_558)">
+                    <path
+                      d="M9.1685 12.0089L0.584229 20.5931L3.41265 23.4216L11.9969 14.8373L9.1685 12.0089Z"
+                      fill="#013A4C"
+                    />
+                    <path
+                      d="M20.5885 0.578443L12.0042 9.16272L14.8326 11.9911L23.4169 3.40687L20.5885 0.578443Z"
+                      fill="#013A4C"
+                    />
+                    <path
+                      d="M3.43457 0.572451L0.60614 3.40088L9.19042 11.9852L12.0188 9.15673L3.43457 0.572451Z"
+                      fill="#013A4C"
+                    />
+                    <path
+                      d="M14.8408 11.9825L12.0123 14.8109L20.5966 23.3952L23.425 20.5668L14.8408 11.9825Z"
+                      fill="#013A4C"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_558">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <p class="font-Roboto text-[17px] leading-[141%] text-lightgray">
+                Sign
+              </p>
+            </div>
+            <div class="flex flex-col gap-2 text-center items-center">
+              <div>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_1_584)">
+                    <path d="M14 0H10V4H14V0Z" fill="#013A4C" />
+                    <path d="M24 9.97998H20V13.98H24V9.97998Z" fill="#013A4C" />
+                    <path d="M4 9.97998H0V13.98H4V9.97998Z" fill="#013A4C" />
+                    <path d="M14 20H10V24H14V20Z" fill="#013A4C" />
+                    <path
+                      d="M19.0706 2.10309L16.2421 4.93152L19.0706 7.75995L21.899 4.93152L19.0706 2.10309Z"
+                      fill="#013A4C"
+                    />
+                    <path
+                      d="M19.079 16.2375L16.2506 19.0659L19.079 21.8943L21.9075 19.0659L19.079 16.2375Z"
+                      fill="#013A4C"
+                    />
+                    <path
+                      d="M4.94207 2.08747L2.11365 4.91589L4.94207 7.74432L7.7705 4.91589L4.94207 2.08747Z"
+                      fill="#013A4C"
+                    />
+                    <path
+                      d="M4.93054 16.2401L2.10211 19.0685L4.93054 21.8969L7.75897 19.0685L4.93054 16.2401Z"
+                      fill="#013A4C"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_584">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <p class="font-Roboto text-[17px] leading-[141%] text-lightgray">
+                Manage
+              </p>
+            </div>
+            <div class="flex flex-col gap-2 text-center items-center">
+              <div>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_1_565)">
+                    <path d="M14 14H10V24H14V14Z" fill="#013A4C" />
+                    <path d="M14 0H10V10H14V0Z" fill="#013A4C" />
+                    <path d="M10 9.97998H0V13.98H10V9.97998Z" fill="#013A4C" />
+                    <path d="M24 9.97998H14V13.98H24V9.97998Z" fill="#013A4C" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_565">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <p class="font-Roboto text-[17px] leading-[141%] text-lightgray">
+                Analyze
+              </p>
+            </div>
+
+            <div class="flex flex-col gap-2 text-center items-center">
+              <div>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_1_595)">
+                    <path
+                      d="M16.9617 14.1485L14.1333 16.9769L20.5821 23.4257L23.4105 20.5973L16.9617 14.1485Z"
+                      fill="#013A4C"
+                    />
+                    <path
+                      d="M3.41205 0.581363L0.583618 3.40979L7.03243 9.8586L9.86086 7.03018L3.41205 0.581363Z"
+                      fill="#013A4C"
+                    />
+                    <path
+                      d="M7.03072 14.1398L0.581909 20.5886L3.41034 23.4171L9.85915 16.9682L7.03072 14.1398Z"
+                      fill="#013A4C"
+                    />
+                    <path
+                      d="M20.5837 0.590127L14.1349 7.03894L16.9633 9.86737L23.4121 3.41855L20.5837 0.590127Z"
+                      fill="#013A4C"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_595">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <p class="font-Roboto text-[17px] leading-[141%] text-lightgray">
+                Integrate
+              </p>
+            </div>
+          </div>
+          <div
+            class="px-[96px] py-[48px] sm:px-[64px] sma-x:px-[15px] md:py-[32px] bg-[url('images/Collab2.png')] bg-no-repeat bg-right-bottom"
+          >
+            <h2
+              class="font-bold font-Work-Sans text-[55px] text-lightgray leading-[145%] tracking-[0.01em] pb-[11px] md:text-[40px]"
+            >
+              Collaborate
+            </h2>
+            <p
+              class="max-w-[545px] text-[21px] text-lightgray leading-[133%] pb-[56px] md:text-[16px] md:pb-[30px]"
+            >
+              Work together on one version in real-time. No hocus pocus.
+            </p>
+            <ul class="flex flex-col gap-2 pb-8">
+              <li class="collab-list-item">Edit live</li>
+              <li class="collab-list-item">Make fields interactive</li>
+              <li class="collab-list-item">Stay one step ahead</li>
+            </ul>
+            <a href="#" class="action-link">Learn more</a>
+          </div>
+        </div>
+      </section>
+      <section
+        class="max-w-[1440px] h-[814px] mx-auto bg-[url('images/Play.png')] bg-cover bg-center bg-no-repeat"
+      >
+        <a href="#" class="block w-[100%] h-[100%]"></a>
+      </section>
+      <section
+        class="max-w-[1440px] mx-auto bg-[url('images/Info1.png')] bg-cover bg-no-repeat px-[15px]"
+      >
+        <div
+          class="max-w-[1152px] mx-auto flex flex-col py-[127px] gap-[150px] md:gap-[75px]"
+        >
+          <h2
+            class="max-w-[830px] mx-auto font-bold font-Work-Sans text-[80px] text-lightgray leading-[100%] text-center sm:text-[60px] md:text-[50px] sma-x:text-[40px]"
+          >
+            The complete platform for smart contracts
+          </h2>
+          <div class="info-item-odd">
+            <svg
+              width="109"
+              height="109"
+              viewBox="0 0 109 109"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_1_747)">
+                <path
+                  d="M54.5 109C84.5995 109 109 84.5995 109 54.5C109 24.4005 84.5995 0 54.5 0C24.4005 0 0 24.4005 0 54.5C0 84.5995 24.4005 109 54.5 109Z"
+                  fill="#013A4C"
+                />
+                <path
+                  d="M26.0822 30.8315H82.9179"
+                  stroke="white"
+                  stroke-width="3.4"
+                  stroke-linecap="square"
+                />
+                <path
+                  d="M35.5807 78.1687C37.0744 78.1687 38.5345 77.7258 39.7765 76.896C41.0184 76.0661 41.9864 74.8867 42.558 73.5067C43.1296 72.1267 43.2791 70.6082 42.9877 69.1432C42.6963 67.6783 41.9771 66.3326 40.9209 65.2764C39.8647 64.2202 38.519 63.501 37.0541 63.2096C35.5891 62.9182 34.0706 63.0677 32.6906 63.6393C31.3107 64.2109 30.1312 65.1789 29.3013 66.4209C28.4715 67.6628 28.0286 69.1229 28.0286 70.6166C28.0286 71.6084 28.2239 72.5904 28.6034 73.5067C28.983 74.4229 29.5393 75.2555 30.2405 75.9568C30.9418 76.658 31.7744 77.2143 32.6906 77.5939C33.6069 77.9734 34.5889 78.1687 35.5807 78.1687V78.1687Z"
+                  stroke="white"
+                  stroke-width="3.4"
+                  stroke-linecap="square"
+                />
+                <path
+                  d="M35.5807 63.0644V30.7537"
+                  stroke="white"
+                  stroke-width="3.4"
+                />
+                <path
+                  d="M50.7629 78.1686C52.2531 78.1532 53.7055 77.6973 54.9372 76.8581C56.1688 76.019 57.1247 74.8342 57.6844 73.453C58.2441 72.0717 58.3826 70.5558 58.0824 69.0959C57.7823 67.6361 57.0569 66.2978 55.9977 65.2494C54.9385 64.2009 53.5928 63.4894 52.13 63.2042C50.6672 62.9191 49.1527 63.0731 47.7772 63.6469C46.4018 64.2207 45.2269 65.1887 44.4004 66.4289C43.574 67.6691 43.133 69.1261 43.1329 70.6164C43.1328 71.6148 43.3307 72.6032 43.7151 73.5246C44.0995 74.446 44.6628 75.282 45.3723 75.9843C46.0818 76.6866 46.9236 77.2413 47.8489 77.6162C48.7741 77.9911 49.7646 78.1789 50.7629 78.1686V78.1686Z"
+                  stroke="white"
+                  stroke-width="3.4"
+                  stroke-linecap="square"
+                />
+                <path
+                  d="M50.7629 63.0644V30.7537"
+                  stroke="white"
+                  stroke-width="3.4"
+                />
+                <path
+                  d="M81.75 60.9623C82.5133 62.2417 82.8811 63.7183 82.8072 65.2063C82.7333 66.6942 82.2209 68.1271 81.3346 69.3245C80.4483 70.522 79.2276 71.4306 77.8261 71.9359C76.4247 72.4413 74.905 72.5208 73.4585 72.1646C72.0119 71.8083 70.703 71.0322 69.6965 69.9338C68.69 68.8355 68.0308 67.464 67.8019 65.9919C67.573 64.5197 67.7846 63.0128 68.4101 61.6607C69.0356 60.3086 70.0471 59.1717 71.3172 58.393C72.1646 57.8673 73.1077 57.5146 74.0921 57.3553C75.0766 57.196 76.0828 57.2332 77.0527 57.4649C78.0227 57.6965 78.9372 58.1179 79.7434 58.7048C80.5496 59.2918 81.2316 60.0326 81.75 60.8844V60.9623Z"
+                  stroke="white"
+                  stroke-width="3.4"
+                  stroke-linecap="square"
+                />
+                <path
+                  d="M72.5628 57.848L61.8964 30.8315"
+                  stroke="white"
+                  stroke-width="3.4"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_1_747">
+                  <rect width="109" height="109" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <h3 class="info-item-title">Forget friction</h3>
+            <p class="info-item-desctiption">
+              Experience a truly digital contract process that makes creating,
+              signing, and managing agreements quick, smooth, and effortless.
+              Contracts without trickery.
+            </p>
+            <a href="#" class="action-link-lightgray-alter">Take the tour</a>
+          </div>
+          <div class="info-item-even">
+            <svg
+              width="109"
+              height="109"
+              viewBox="0 0 109 109"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_1_767)">
+                <path
+                  d="M54.5 109C84.5995 109 109 84.5995 109 54.5C109 24.4005 84.5995 0 54.5 0C24.4005 0 0 24.4005 0 54.5C0 84.5995 24.4005 109 54.5 109Z"
+                  fill="#013A4C"
+                />
+                <path
+                  d="M69.1371 52.6079L72.4071 82.8866H37.4804L40.7426 52.6079"
+                  stroke="white"
+                  stroke-width="3.4"
+                />
+                <path
+                  d="M70.1571 62.0679H39.7071"
+                  stroke="white"
+                  stroke-width="3.4"
+                />
+                <path
+                  d="M30.3643 52.6079H79.57"
+                  stroke="white"
+                  stroke-width="3.4"
+                  stroke-linecap="square"
+                />
+                <path
+                  d="M83.3071 26.1133L56.8357 43.1484"
+                  stroke="white"
+                  stroke-width="3.4"
+                  stroke-linecap="square"
+                />
+                <path
+                  d="M32.2329 29.897H39.8084"
+                  stroke="white"
+                  stroke-width="3.4"
+                  stroke-linecap="square"
+                />
+                <path
+                  d="M36.0167 26.1133V33.681"
+                  stroke="white"
+                  stroke-width="3.4"
+                  stroke-linecap="square"
+                />
+                <path
+                  d="M41.7003 41.2642H49.268"
+                  stroke="white"
+                  stroke-width="3.4"
+                  stroke-linecap="square"
+                />
+                <path
+                  d="M45.4841 37.4727V45.0404"
+                  stroke="white"
+                  stroke-width="3.4"
+                  stroke-linecap="square"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_1_767">
+                  <rect width="109" height="109" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <h3 class="info-item-title">Unleash data</h3>
+            <p class="info-item-desctiption">
+              Get faster and smarter with automated processes and intelligent
+              insights that unlock the data inside your agreements. Leave behind
+              the limitations of paper and PDFs. Just like that.
+            </p>
+            <a href="#" class="action-link-lightgray-alter">Take the tour</a>
+          </div>
+          <div class="info-item-odd">
+            <svg
+              width="109"
+              height="109"
+              viewBox="0 0 109 109"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_1_790)">
+                <path
+                  d="M54.5 109C84.5995 109 109 84.5995 109 54.5C109 24.4005 84.5995 0 54.5 0C24.4005 0 0 24.4005 0 54.5C0 84.5995 24.4005 109 54.5 109Z"
+                  fill="#013A4C"
+                />
+                <path
+                  d="M49.8286 55.2788L24.8364 80.3488"
+                  stroke="white"
+                  stroke-width="3.4"
+                />
+                <path
+                  d="M39.3957 26.0044H31.7657"
+                  stroke="white"
+                  stroke-width="3.4"
+                  stroke-linecap="square"
+                />
+                <path
+                  d="M35.5807 22.1895V29.8195"
+                  stroke="white"
+                  stroke-width="3.4"
+                  stroke-linecap="square"
+                />
+                <path
+                  d="M79.1029 71.395H71.5507"
+                  stroke="white"
+                  stroke-width="3.4"
+                  stroke-linecap="square"
+                />
+                <path
+                  d="M75.2878 67.6582V75.2103"
+                  stroke="white"
+                  stroke-width="3.4"
+                  stroke-linecap="square"
+                />
+                <path
+                  d="M62.0521 27.873V22.1895"
+                  stroke="white"
+                  stroke-width="3.4"
+                  stroke-linecap="square"
+                />
+                <path
+                  d="M82.9178 44.9238H77.2343"
+                  stroke="white"
+                  stroke-width="3.4"
+                  stroke-linecap="square"
+                />
+                <path
+                  d="M50.3736 54.7338L38.9286 52.0866L48.9722 46.0138L47.96 34.2573L56.8357 41.9652L67.7357 37.4495L63.1422 48.2716L70.85 57.1473L59.0936 56.1352L53.0207 66.1788L50.3736 54.7338V54.7338Z"
+                  stroke="white"
+                  stroke-width="3.4"
+                  stroke-linecap="square"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_1_790">
+                  <rect width="109" height="109" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <h3 class="info-item-title">Take control</h3>
+            <p class="info-item-desctiption">
+              Know what’s happening in real-time with a complete overview of all
+              your contracts, all in one place. It’s all the visibility and
+              transparency you need, at your fingertips.
+            </p>
+            <a href="#" class="action-link-lightgray-alter">Take the tour</a>
+          </div>
+          <div class="info-item-even">
+            <svg
+              width="109"
+              height="109"
+              viewBox="0 0 109 109"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_1_767)">
+                <path
+                  d="M54.5 109C84.5995 109 109 84.5995 109 54.5C109 24.4005 84.5995 0 54.5 0C24.4005 0 0 24.4005 0 54.5C0 84.5995 24.4005 109 54.5 109Z"
+                  fill="#013A4C"
+                />
+                <path
+                  d="M69.1371 52.6079L72.4071 82.8866H37.4804L40.7426 52.6079"
+                  stroke="white"
+                  stroke-width="3.4"
+                />
+                <path
+                  d="M70.1571 62.0679H39.7071"
+                  stroke="white"
+                  stroke-width="3.4"
+                />
+                <path
+                  d="M30.3643 52.6079H79.57"
+                  stroke="white"
+                  stroke-width="3.4"
+                  stroke-linecap="square"
+                />
+                <path
+                  d="M83.3071 26.1133L56.8357 43.1484"
+                  stroke="white"
+                  stroke-width="3.4"
+                  stroke-linecap="square"
+                />
+                <path
+                  d="M32.2329 29.897H39.8084"
+                  stroke="white"
+                  stroke-width="3.4"
+                  stroke-linecap="square"
+                />
+                <path
+                  d="M36.0167 26.1133V33.681"
+                  stroke="white"
+                  stroke-width="3.4"
+                  stroke-linecap="square"
+                />
+                <path
+                  d="M41.7003 41.2642H49.268"
+                  stroke="white"
+                  stroke-width="3.4"
+                  stroke-linecap="square"
+                />
+                <path
+                  d="M45.4841 37.4727V45.0404"
+                  stroke="white"
+                  stroke-width="3.4"
+                  stroke-linecap="square"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_1_767">
+                  <rect width="109" height="109" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <h3 class="info-item-title">Unleash data</h3>
+            <p class="info-item-desctiption">
+              Get faster and smarter with automated processes and intelligent
+              insights that unlock the data inside your agreements. Leave behind
+              the limitations of paper and PDFs. Just like that.
+            </p>
+            <a href="#" class="action-link-lightgray-alter">Take the tour</a>
+          </div>
+        </div>
+      </section>
+      <section
+        class="max-w-[1440px] mx-auto px-[15px] bg-[url('images/Demo1.png')] bg-no-repeat bg-cover bg-center"
+      >
+        <div class="max-w-[1152px] mx-auto py-[310px]">
+          <h2
+            class="font-Roboto font-bold text-lightalter text-[73px] leading-[107%] pb-8 md:text-[60px] sma-x:text-[45px]"
+          >
+            Believe your eyes
+          </h2>
+          <p
+            class="max-w-[470px] font-Work-Sans text-light text-[26px] leading-[123%] tracking-[0.01em] pb-[25px] md:text-[22px] sma-x:text-[18px]"
+          >
+            Let us show you how to work smarter with contracts in Oneflow.
+          </p>
+          <a href="#" class="action-link-alter">Get a demo</a>
+        </div>
+      </section>
+      <section
+        class="max-w-[1152px] mx-auto flex justify-between items-center px-[15px] sm:flex-col sm:gap-y-8"
+      >
+        <div class="sm:pt-[45px]">
+          <h2
+            class="max-w-[387px] font-Roboto text-[72px] text-lightgray leading-[100%] tracking-[0.01em] pb-[30px] sm:max-w-[100%] sm:pb-[20px] sm:text-[60px] md:text-[50px] sma-x::text-[50px]"
+          >
+            Seamless integrations
+          </h2>
+          <p
+            class="max-w-[400px] font-Work-Sans text-[21px] text-lightgray leading-[133%] pb-[19px] sm:max-w-[100%] md:text-[18px]"
+          >
+            Integrate your favorite tools with your contract workflow and work
+            wonders.
+          </p>
+          <a href="#" class="action-link-alter">View all integrations</a>
+        </div>
+        <div class="max-w-[564px] flex flex-col sm:max-w-[100%]">
+          <div class="integration-container-odd">
+            <div>
+              <a href="#"
+                ><img
+                  class="sma-x:h-[100px]"
+                  src="images/Integration1.png"
+                  alt="Integration firm"
+              /></a>
+            </div>
+          </div>
+          <div class="integration-container-even">
+            <a href="#"
+              ><img
+                class="sma-x:h-[100px]"
+                src="images/Integration2.png"
+                alt="Integration firm"
+            /></a>
+            <a href="#"
+              ><img
+                class="sma-x:h-[100px]"
+                src="images/Integration3.png"
+                alt="Integration firm"
+            /></a>
+          </div>
+          <div class="integration-container-odd">
+            <div>
+              <a href="#"
+                ><img
+                  class="sma-x:h-[100px]"
+                  src="images/Integration4.png"
+                  alt="Integration firm"
+              /></a>
+            </div>
+          </div>
+          <div class="integration-container-even">
+            <a href="#"
+              ><img
+                class="sma-x:h-[100px]"
+                src="images/Integration5.png"
+                alt="Integration firm"
+            /></a>
+            <a href="#"
+              ><img
+                class="sma-x:h-[100px]"
+                src="images/Integration6.png"
+                alt="Integration firm"
+            /></a>
+          </div>
+          <div class="integration-container-odd">
+            <div>
+              <a href="#"
+                ><img
+                  class="sma-x:h-[100px]"
+                  src="images/Integration7.png"
+                  alt="Integration firm"
+              /></a>
+            </div>
+          </div>
+          <div class="integration-container-even">
+            <a href="#"
+              ><img
+                class="sma-x:h-[100px]"
+                src="images/Integration4.png"
+                alt="Integration firm"
+            /></a>
+            <a href="#"
+              ><img
+                class="sma-x:h-[100px]"
+                src="images/Integration9.png"
+                alt="Integration firm"
+            /></a>
+          </div>
+          <div class="integration-container-odd">
+            <div>
+              <a href="#"
+                ><img
+                  class="sma-x:h-[100px]"
+                  src="images/Integration1.png"
+                  alt="Integration firm"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="max-w-[1152px] mx-auto py-[50px] px-[15px]">
+        <div
+          class="w-[100%] flex justify-between items-start gap-4 md:flex-col"
+        >
+          <h2
+            class="font-Roboto font-bold text-[48px] text-lightgray leading-[112%] tracking-[0.01em] md:text-[32px]"
+          >
+            And for our next trick…
+          </h2>
+          <a href="#" class="action-link-alter">Visit our blog</a>
+        </div>
+        <div class="w-[100%] pt-[45px] flex flex-col gap-x-6">
+          <div class="py-[45px] px-8 bg-[#F2DCE4] flex justify-between md:px-4">
+            <div>
+              <a
+                href="#"
+                class="py-1 px-2 bg-[#B73D8B] rounded-[2px] font-Work-Sans text-lightalter text-[11px]"
+                >Article</a
+              >
+              <h2
+                class="max-w-[448px] font-Roboto text-[48px] text-lightgray leading-[112%] tracking-[0.01em] mt-[63px] mb-[100px] md:text-[30px] md:max-w-[500px]"
+              >
+                A Basic Guide on E-signatures and What Makes Them Legally
+                Binding
+              </h2>
+              <span
+                class="font-Work-Sans text-[11px] text-lightgray leading-[145%]"
+                >E-signature |</span
+              >
+              <span
+                class="font-Work-Sans text-[11px] text-lightgray leading-[145%] ml-5"
+                >11 min read</span
+              >
+            </div>
+            <img
+              class="w-[278px] aspect-[0.6] md:hidden"
+              src="images/Blog1.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="grid grid-rows-1 grid-cols-3 gap-x-6 pt-6 md-custom:grid-cols-2 md-custom:gap-y-6 sma-l:grid-cols-1 sma-l:grid-rows-3"
+          >
+            <div class="bg-lightgray pb-6 flex flex-col items-start">
+              <img
+                class="mb-6 md-custom:mx-auto md-custom:pt-2"
+                src="images/Blog2.png"
+                alt="Learn"
+              />
+              <a
+                href="#"
+                class="mx-6 py-1 px-2 bg-lightalter rounded-[2px] font-Work-Sans text-lightgray text-[11px]"
+                >Guide</a
+              >
+              <h3
+                class="mx-6 font-Roboto text-light text-[24px] leading-[133%] tracking-[0.02em] mt-[18px] mb-[70px] sma-x:mb-[20px]"
+              >
+                29 documents you can sign online in 2021
+              </h3>
+              <div class="mt-auto">
+                <span
+                  class="ml-6 font-Work-Sans text-[11px] text-light leading-[145%]"
+                  >Contract automation |</span
+                >
+                <span
+                  class="font-Work-Sans text-[11px] text-light leading-[145%] ml-5"
+                  >18 min read</span
+                >
+              </div>
+            </div>
+            <div
+              class="flex flex-col items-center gap-y-[107px] p-6 bg-[#0F5987]"
+            >
+              <a
+                href="#"
+                class="mx-6 py-1 px-2 bg-[#187BB7] rounded-[2px] font-Work-Sans text-light text-[11px]"
+                >Customer Story</a
+              >
+              <h3 class="font-Roboto text-light text-[40px] leading-[120%]">
+                Sweco
+              </h3>
+              <a href="#" class="action-link-light">Read full story</a>
+            </div>
+            <div class="bg-lightalter pb-6 flex flex-col items-start">
+              <img
+                class="mb-6 md-custom:mx-auto md-custom:pt-2"
+                src="images/Blog3.png"
+                alt="Learn"
+              />
+              <a
+                href="#"
+                class="py-1 px-2 mx-6 bg-[#B73D8B] rounded-[2px] font-Work-Sans text-lightalter text-[11px]"
+                >Article</a
+              >
+              <h3
+                class="mx-6 font-Roboto text-lightgray text-[24px] leading-[133%] tracking-[0.02em] mt-[18px] mb-[70px] sma-x:mb-[20px]"
+              >
+                Master digital sales: How to close deals when you’re not allowed
+                to shake hands
+              </h3>
+              <div class="mt-auto">
+                <span
+                  class="font-Work-Sans ml-6 text-[11px] text-lightgray leading-[145%]"
+                  >Sales |</span
+                >
+                <span
+                  class="font-Work-Sans text-[11px] text-lightgray leading-[145%] ml-5"
+                  >18 min read</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="max-w-[1152px] mx-auto pt-[100px] px-[15px] md:pt-[50px]">
+        <h2
+          class="font-Roboto font-bold text-lightgray text-[48px] leading-[112%] tracking-[0.01em] mb-[50px] md:text-[36px] md:mb-[25px]"
+        >
+          More from Oneflow
+        </h2>
+        <div class="grid grid-cols-2 gap-[32px] md:grid-rows-2 md:grid-cols-1">
+          <div class="text-center flex flex-col items-center gap-5">
+            <img src="images/More1.png" alt="Preview" />
+            <h3
+              class="font-Work-Sans text-lightgray text-[16px] leading-[125%]"
+            >
+              One platform. All departments
+            </h3>
+            <p
+              class="max-w-[480px] font-Roboto text-lightgray text-[31px] leading-[129%] tracking-[0.01em] md:text-[25px] sma-x:text-[22px]"
+            >
+              Create, sign and manage any type of agreement you can think of
+            </p>
+            <a href="#" class="action-link-alter">Find out more</a>
+          </div>
+          <div class="text-center flex flex-col items-center gap-5">
+            <img src="images/More2.png" alt="Preview" />
+            <h3
+              class="font-Work-Sans text-lightgray text-[16px] leading-[125%]"
+            >
+              Why Oneflow
+            </h3>
+            <p
+              class="max-w-[480px] font-Roboto text-lightgray text-[31px] leading-[129%] tracking-[0.01em] md:text-[25px] sma-x:text-[22px]"
+            >
+              Six reasons why teams around the world love the magic of flow
+            </p>
+            <a href="#" class="action-link-alter">Find out more</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="max-w-[1440px] mx-auto bg-lightgray py-16 px-[144px] mt-[100px] md:mt-[50px] lg:px-[15px]"
+    >
+      <div
+        class="flex justify-between flex-wrap gap-x-[90px] gap-y-[40px] pb-[115px] lg:justify-normal lg:gap-x-[60px] sma-l:pb-[50px]"
+      >
+        <div>
+          <a href="#">
+            <img src="images/Logo.svg" alt="Logo" />
+          </a>
+          <div class="mt-[60px]">
+            <p class="font-Work-Sans text-light text-[14px] leading-[143%]">
+              Headquarters:
+            </p>
+            <p class="font-Work-Sans text-light text-[14px] leading-[143%]">
+              Hudiksvallsgatan 8
+            </p>
+            <p class="font-Work-Sans text-light text-[14px] leading-[143%]">
+              113 30 Stockholm, Sweden
+            </p>
+            <p class="font-Work-Sans text-light text-[14px] leading-[143%]">
+              +46 8 517 297 70
+            </p>
+          </div>
+        </div>
+        <div class="ml-[30px] lg:ml-[0px]">
+          <h3 class="footer-title">Why Oneflow</h3>
+          <ul class="footer-list">
+            <li class="footer-list-item">
+              <a href="#">Product tour</a>
+            </li>
+            <li class="footer-list-item">
+              <a href="#">Smart contracts</a>
+            </li>
+            <li class="footer-list-item">
+              <a href="#">Built for scale</a>
+            </li>
+            <li class="footer-list-item">
+              <a href="#">Integrations</a>
+            </li>
+            <li class="footer-list-item">
+              <a href="#">Customer stories</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-title">Learn</h3>
+          <ul class="footer-list">
+            <li class="footer-list-item">
+              <a href="#">FAQ</a>
+            </li>
+            <li class="footer-list-item">
+              <a href="#">Onboarding</a>
+            </li>
+            <li class="footer-list-item">
+              <a href="#">Developers</a>
+            </li>
+            <li class="footer-list-item">
+              <a href="#">Help Center</a>
+            </li>
+            <li class="footer-list-item">
+              <a href="#">E-sign guide</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-title">Security</h3>
+          <ul class="footer-list">
+            <li class="footer-list-item">
+              <a href="#">Security Center</a>
+            </li>
+            <li class="footer-list-item">
+              <a href="#">Reliability</a>
+            </li>
+            <li class="footer-list-item">
+              <a href="#">Compliance</a>
+            </li>
+            <li class="footer-list-item">
+              <a href="#">E-signing legality</a>
+            </li>
+            <li class="footer-list-item">
+              <a href="#">GDPR</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-title">More Oneflow</h3>
+          <ul class="footer-list">
+            <li class="footer-title">
+              <a href="#">About us</a>
+            </li>
+            <li class="footer-title">
+              <a href="#">Pricing</a>
+            </li>
+            <li class="footer-title">
+              <a href="#">Partners</a>
+            </li>
+            <li class="footer-title">
+              <a href="#">Blog</a>
+            </li>
+            <li class="footer-title">
+              <a href="#">Careers</a>
+            </li>
+            <li class="footer-title">
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="max-w-[1152px] mx-auto px-[15px] flex flex-wrap gap-[48px] items-center py-[55px] border-t-[2px] border-[#14495A]"
+      >
+        <div class="max-w-[368px]">
+          <h2
+            class="font-Roboto text-light text-[23px] leading-[139%] tracking-[0.02em] mb-3"
+          >
+            Get in the flow
+          </h2>
+          <p class="font-Work-Sans text-light text-[14px] leading-[143%]">
+            Send, track and sign your contracts free for the rest of your life.
+            No trickery.
+          </p>
+        </div>
+        <a href="#" class="action-link-alter">Get Oneflow free</a>
+      </div>
+      <nav class="px-[15px] pt-4 border-t-[2px] border-[#14495A]">
+        <ul class="flex flex-wrap items-center gap-8">
+          <li class="font-Work-Sans text-footergray text-[13px] leading-[138%]">
+            <a href="#">Login</a>
+          </li>
+          <li class="font-Work-Sans text-footergray text-[13px] leading-[138%]">
+            <a href="#">Privacy</a>
+          </li>
+          <li class="font-Work-Sans text-footergray text-[13px] leading-[138%]">
+            <a href="#">Cookie statement</a>
+          </li>
+          <li>
+            <a href="#" class="py-[11px]"
+              ><img src="images/Search.svg" alt=""
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+    <dialog
+      class="bg-white w-[100%] h-[100%] max-w-[100%] max-h-[100%] pt-[30dvh]"
+      id="mobileOverlay"
+    >
+      <form class="absolute top-[25px] right-[15px]">
+        <button
+          id="burger-menu"
+          onclick="mobileOverlay.close()"
+          type="submit"
+          class="group h-8 w-10 flex flex-col justify-between md-custom-mobile:hidden"
+        >
+          <span
+            class="block h-[2px] w-[100%] bg-[#000] rotate-45 translate-y-[15px]"
+          ></span>
+          <span
+            class="block h-[2px] w-[100%] bg-[#000] -rotate-45 -translate-y-[15px]"
+          ></span>
+        </button>
+      </form>
+      <nav class="flex flex-col items-center gap-8">
+        <ul class="flex flex-col items-center gap-4">
+          <li class="header-nav-link_wrapper_mobile">
+            <a href="#" class="header-nav-link">Why Oneflow?</a>
+          </li>
+          <li class="header-nav-link_wrapper_mobile">
+            <a href="#" class="header-nav-link">Learn</a>
+          </li>
+          <li class="header-nav-link_wrapper_mobile">
+            <a href="#" class="header-nav-link">Pricing</a>
+          </li>
+          <li class="header-nav-link_wrapper_mobile">
+            <a href="#" class="header-nav-link">About</a>
+          </li>
+          <li class="header-nav-link_wrapper_mobile">
+            <a href="#" class="header-nav-link">Blog</a>
+          </li>
+        </ul>
+        <div class="flex gap-2">
+          <a class="action-link-alter_mobile" href="#">Get a demo</a>
+          <a class="action-link_mobile" href="#">Log in</a>
+        </div>
+        <a href="#" class=""><img src="images/Search.svg" alt="" /></a>
+      </nav>
+    </dialog>
+  </body>
+</html>
